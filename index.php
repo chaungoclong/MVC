@@ -1,2 +1,2 @@
 <?php 
-echo "index";
+require_once 'bootstrap.php';
