@@ -1,0 +1,14 @@
+cấu trúc các lớp làm việc với cơ sở dữ liệu:
+*QUERY: cung cấp các phương thức hỗ trợ việc viết câu Query: insert, update, delete, select, where...
+*DATABASE: cung cấp kết nối và các phương thức thao tác với các câu lệnh SQL cơ bản: select, insert, delete, update. Sử dụng lớp QUERY dể tạo câu Query.
+*BASE MODEL: cung cấp các phương thức thao tác nhanh với CSDL: All, First, Last...
+*MODEL: cung cấp các phương thức thao tác trực tiếp với Đối tượng nó thể hiện:
+vd: lấy tất cả bản ghi trong bảng Product ->  getAll().
++ mối lớp Model dều có 1 hằng số định nghĩa tên bảng mà nó thao tác. Hằng số này sẽ được truyền vào phương thức 
+
+VD:
+*Database: select(query, param) { ... };
+*BaseModel: extends Database 
+ All(tableName) { ... select(query, param)}
+*ProductModel: extends BaseModel
+getAll() { ... All(tableName)}

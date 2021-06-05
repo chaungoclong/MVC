@@ -1,0 +1,15 @@
+{
+	"autoload": {
+		"psr-4": {
+			"app\\": "app/",
+			"system\\": "system/"
+		},
+		"files": [
+			"config/constant/constant.php",
+			"routes/web.php",
+			"system/helpers/string.php",
+			"system/helpers/default.php",
+			"system/helpers/array.php"
+		]
+	}
+}
