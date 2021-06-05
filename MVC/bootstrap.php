@@ -5,12 +5,6 @@
 // echo "</pre>";
 require_once 'vendor/autoload.php';
 
-use system\core\Route;
-Route::get("/home", "HomeController@index");
-
-Route::post("/ok", function() {
-	echo "post";
-});
 use system\core\App;
 App::run();
 

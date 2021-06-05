@@ -1,6 +1,7 @@
 <?php 
-use \system\core\Route;
+use system\core\Route;
+Route::get("/home", "HomeController@index");
 
-Route::get("/home/{name}/{id}", function(){
-
+Route::post("/ok", function() {
+	echo "post";
 });
