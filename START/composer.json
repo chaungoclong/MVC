@@ -1,0 +1,14 @@
+{
+	"autoload": {
+		"psr-4": {
+			"start\\" : "start/",
+			"app\\": "app/"
+		},
+		"files": [
+			"routes/web.php",
+			"start/common.php",
+			"start/helpers/array.php",
+			"start/helpers/string.php"
+		]
+	}
+}
