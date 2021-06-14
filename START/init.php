@@ -76,8 +76,8 @@ use start\core\App;
 $app = new App();
 $app->start();
 
-use start\database\Connection;
-use start\database\DB;
-$db = new DB;
-$rs = $db->get("select * from classroom where class_id > ?", [1]);
-dd($rs);
+// use start\database\Connection;
+// use start\database\DB;
+// $db = new DB;
+// $rs = $db->get("select * from classroom where class_id > ?", [1]);
+// $db->run("delete from classroom where class_id = ?", [8]);

@@ -1,11 +1,11 @@
   <h4><small>RECENT POSTS</small></h4>
   <hr>
-  <h2><?php var_dump(config("database")); ?></h2>
+  <h2><?php var_dump(config("database"));?></h2>
   <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
   <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
   <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   <br><br>
-  
+
   <h4><small>RECENT POSTS</small></h4>
   <hr>
   <h2>Officially Blogging</h2>
@@ -22,9 +22,9 @@
   	<button type="submit" class="btn btn-success">Submit</button>
   </form>
   <br><br>
-  
+
   <p><span class="badge">2</span> Comments:</p><br>
-  
+
   <div class="row">
   	<div class="col-sm-2 text-center">
   		<img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">

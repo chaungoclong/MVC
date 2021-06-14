@@ -27,7 +27,7 @@ class Connection
 		$this->password = $config['password'];
 		$this->options  = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 
-		echo $this->dsn;
+		// echo $this->dsn;
 	}
 
 
@@ -46,13 +46,13 @@ class Connection
 		if (! isset($this->pdo)) {
 			try {
 				$this->pdo = new PDO($this->dsn, $this->username, $this->password, $this->options);
-				echo "create";
+				// echo "create";
 			} catch (Exception $e) {
 				die($e->getMessage());
 			}
 		}
 
-		echo "use";
+		// echo "use";
 		return $this->pdo;
 	}
 
@@ -60,6 +60,6 @@ class Connection
 	public function close()
 	{
 		$this->pdo = null;
-		var_dump($this->pdo);
+		// var_dump($this->pdo);
 	}
 }
